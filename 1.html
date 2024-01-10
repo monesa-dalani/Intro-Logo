@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Fashion Website</title>
+</head>
+<body>
+  <!-- <p>heloo world</p> -->
+  <div class="circle">
+  <div class="logo"></div>
+  <div class="text">
+   <p>Fashion in the city . Fashion in the city . </p>
+
+  </div>
+</div>
+
+<script>
+
+    const text = document.querySelector('.text p');
+    text.innerHTML = text.innerText.split("").map(
+      (char, i) =>
+      `<span style="transform:rotate(${i* 8.5}deg)">${char}</span>`
+    ).join("")
+</script>
+</body>
+</html>

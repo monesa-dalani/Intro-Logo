@@ -1,0 +1,66 @@
+
+@font-face {
+    font-family: "Windsong";
+    src: url(/WindSong/WindSong-Medium.ttf);
+}
+body{
+    /* border: 5px solid rgb(241, 154, 154); */
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     
+}
+
+p{
+    
+    font-size: 50%;
+    font-family: "Windsong";
+    color: rgb(0, 0, 0);
+}
+.circle{
+  position: relative;   
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  /* background-color: rgb(83, 83, 83); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.logo{
+    position: absolute;   
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: url(Logo.jpg);
+    background-size: cover;
+    filter: brightness(1.5) contrast(1.9);  
+  
+  }
+  
+  .text{
+    position: absolute;   
+    width: 300%;
+    height: 110%;
+    font-size: 50%;
+    animation: rotateText 10s linear infinite;
+  }
+  
+  @keyframes rotateText {
+    0%{
+      transform: rotate(360deg);
+    }
+    100%{
+      transform: rotate(0deg);
+    }
+  }
+
+  .text span{
+    position: absolute;   
+    left: 50%;
+    font-size: 1.2rem;
+    transform-origin: 0 100px;
+  }
